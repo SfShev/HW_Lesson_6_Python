@@ -5,6 +5,6 @@
 # - 1 -> нет
 
 day = int(input("Введите № дня недели: "))
-check_day = (lambda day: "выходной" if day == 6 or day == 7 else "будний день")
+check_day = lambda day: "выходной" if day == 6 or day == 7 else "будний день"
 
 print(check_day(day))
