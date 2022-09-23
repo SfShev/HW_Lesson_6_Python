@@ -19,5 +19,5 @@ n = int(input('Введите число: '))
 sq = lambda i: ((1 + 1 / i) ** i)
 lst = [sq(n) for n in range(1, n + 1)]
 lst = [round(lst[item],5) for item in range(len(lst)) ]
-print(lst)
-print(round(sum(lst[i] for i in range(len(lst))),5))
+print(f"{lst}\n{round(sum(lst[i] for i in range(len(lst))),5)}")
+
